@@ -28,6 +28,20 @@ const Client = vsr.Client(StateMachine, MessageBus);
 // Reduce noise
 pub const log_level: std.log.Level = .err;
 
+// Override root.log so that we don't log anything.
+// This is done to avoid polluting structured logging output.
+// As this is silent, devs need to check the cluster logs for errors.
+// In the future this could invoke a configured JS logging callback.
+pub fn log(
+     comptime _: std.log.Level,
+     comptime _: @TypeOf(.EnumLiteral),
+     comptime _: []const u8,
+     _: anytype,
+ ) void {
+     // do nothing
+     return;
+ }
+
 /// N-API will call this constructor automatically to register the module.
 export fn napi_register_module_v1(env: c.napi_env, exports: c.napi_value) c.napi_value {
     translate.register_function(env, exports, "init", init) catch return null;
