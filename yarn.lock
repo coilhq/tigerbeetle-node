@@ -2,13 +2,13 @@
 # Manual changes might be lost - proceed with caution!
 
 __metadata:
-  version: 4
-  cacheKey: 7
+  version: 6
+  cacheKey: 8
 
 "@types/node@npm:^14.14.41":
   version: 14.17.1
   resolution: "@types/node@npm:14.17.1"
-  checksum: 3ab1180ff2579f4039aa2416087df03e4e8b5f930b64e024ad2b2ae73e546f6054c3bae0324180d425944c7c408c02fdf6ca71f5a265ed05f28aeaae0a2c3599
+  checksum: 81cc34ecd6e21ed723f00e55f042ccc1e1bde306122fa73aab9437584339fe1dd0c10e00ee691c99f0b9ca1ebcc9d6f0d35ca78356f7d0d580eaf3e93bd48718
   languageName: node
   linkType: hard
 
@@ -27,16 +27,16 @@ typescript@^4.0.2:
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: edaede2fa77f56b7fba80ee624a2368ab1216e75b0434d968ccb47ab0a5e2f6d94f848b3b111c1237dd71e988cd376af26370dcdad3b94355c76e759f0dd0a1e
+  checksum: 89c397df192f239359ad798b96d8e8d552e12c0c189ac5676cec4c20c410d6eec636b8e59a88f2aef0a56d961a9678d99c400099be9b7cae2f7b062eb4b7b171
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.0.2#builtin<compat/typescript>":
+"typescript@patch:typescript@^4.0.2#~builtin<compat/typescript>":
   version: 4.2.4
-  resolution: "typescript@patch:typescript@npm%3A4.2.4#builtin<compat/typescript>::version=4.2.4&hash=a45b0e"
+  resolution: "typescript@patch:typescript@npm%3A4.2.4#~builtin<compat/typescript>::version=4.2.4&hash=bda367"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 3be44317593182e8ce494c114e7ad9b0bb2553a22f3085cc6da4f0a36912c20850daa9be4c898af2ab6fc8b12f430c1c9e46ac715721867cd38643f2350d3ef9
+  checksum: eb86e0e8022e5297f7a7b871b6edfbf33b57049416ada8bf97c358760125c7c79f074fbebd1b8e8230f858ae05eb22ad0e805e8f6acd5eae1fa886681624c15e
   languageName: node
   linkType: hard
