@@ -13,3 +13,5 @@ tigerbeetle
 yarn-error.log
 zig/
 zig-cache/
+
+.idea
