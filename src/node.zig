@@ -25,7 +25,8 @@ const vsr = @import("tigerbeetle/src/vsr.zig");
 const Header = vsr.Header;
 const Client = vsr.Client(StateMachine, MessageBus);
 
-pub const log_level: std.log.Level = .info;
+// Reduce noise
+pub const log_level: std.log.Level = .err;
 
 /// N-API will call this constructor automatically to register the module.
 export fn napi_register_module_v1(env: c.napi_env, exports: c.napi_value) c.napi_value {
